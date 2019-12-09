@@ -1,24 +1,70 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, {useState, useEffect} from 'react';
 import './App.css';
 
+import Header from './components/Header'
+import Puntajes from './components/Puntajes'
+import Jugadores from './components/Jugadores'
+
 function App() {
+
+  const[contadorNosotros, setContadorNosotros] = useState(localStorage.getItem('puntajeNosotros'));
+  const[contadorEllos, setContadorEllos] = useState(localStorage.getItem('puntajeEllos'));
+
+  localStorage.setItem("puntajeNosotros", contadorNosotros);
+  localStorage.setItem("puntajeEllos", contadorEllos);
+
+  const incrementarNosotros = () => {
+        if(contadorNosotros < 30 && contadorNosotros >= 0){
+          setContadorNosotros(parseInt(contadorNosotros) + 1);
+        }
+    }
+
+    const decrementarNosotros = () => {
+      if(contadorNosotros <= 30 && contadorNosotros > 0){
+        setContadorNosotros(parseInt(contadorNosotros) - 1);
+      }
+  }
+
+
+  const incrementarEllos = () => {
+    if(contadorEllos < 30 && contadorEllos >= 0){
+      setContadorEllos(parseInt(contadorEllos) + 1);
+    }
+}
+
+const decrementarEllos = () => {
+  if(contadorEllos <= 30 && contadorEllos > 0){
+    setContadorEllos(parseInt(contadorEllos) - 1);
+  }
+}
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <div className="row">
+        <div className="col-lg-12">
+          <Header/>
+        </div>
+      </div>
+        
+      <div className="row">
+        <div className="col-lg-6">
+          <Jugadores 
+            incrementarNosotros={incrementarNosotros}
+            decrementarNosotros={decrementarNosotros}
+            incrementarEllos={incrementarEllos}
+            decrementarEllos={decrementarEllos}
+            contadorNosotros={contadorNosotros}
+            contadorEllos={contadorEllos}
+          />
+        </div>
+        <div className="col-lg-6">
+          <Puntajes
+            contadorNosotros={contadorNosotros}
+            contadorEllos={contadorEllos} 
+          />
+        </div>
+      </div>
+
     </div>
   );
 }
