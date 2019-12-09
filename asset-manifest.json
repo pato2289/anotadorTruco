@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/anotadorTruco/static/css/main.9232d9dd.chunk.css",
+    "main.js": "/anotadorTruco/static/js/main.ad604fe5.chunk.js",
+    "main.js.map": "/anotadorTruco/static/js/main.ad604fe5.chunk.js.map",
+    "runtime-main.js": "/anotadorTruco/static/js/runtime-main.f619581f.js",
+    "runtime-main.js.map": "/anotadorTruco/static/js/runtime-main.f619581f.js.map",
+    "static/js/2.393d467d.chunk.js": "/anotadorTruco/static/js/2.393d467d.chunk.js",
+    "static/js/2.393d467d.chunk.js.map": "/anotadorTruco/static/js/2.393d467d.chunk.js.map",
+    "index.html": "/anotadorTruco/index.html",
+    "precache-manifest.9f0c2deba16b473a1fc3f8f50b63d2c7.js": "/anotadorTruco/precache-manifest.9f0c2deba16b473a1fc3f8f50b63d2c7.js",
+    "service-worker.js": "/anotadorTruco/service-worker.js",
+    "static/css/main.9232d9dd.chunk.css.map": "/anotadorTruco/static/css/main.9232d9dd.chunk.css.map"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f619581f.js",
+    "static/js/2.393d467d.chunk.js",
+    "static/css/main.9232d9dd.chunk.css",
+    "static/js/main.ad604fe5.chunk.js"
+  ]
+}
