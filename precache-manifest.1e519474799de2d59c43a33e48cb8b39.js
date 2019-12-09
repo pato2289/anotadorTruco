@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "9ceef8fa8e835d3a17f201f9436bc899",
+    "revision": "0cf9a24d1ddd3074f83f9be632edc1ef",
     "url": "/anotadorTruco/index.html"
   },
   {
-    "revision": "702c4ed1e43f83d5c6f8",
+    "revision": "66142a9d5d4673b6d5e1",
     "url": "/anotadorTruco/static/css/main.9232d9dd.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/anotadorTruco/static/js/2.393d467d.chunk.js"
   },
   {
-    "revision": "702c4ed1e43f83d5c6f8",
-    "url": "/anotadorTruco/static/js/main.ad604fe5.chunk.js"
+    "revision": "66142a9d5d4673b6d5e1",
+    "url": "/anotadorTruco/static/js/main.a18e0300.chunk.js"
   },
   {
     "revision": "38dcf7c7f1356ef77c83",

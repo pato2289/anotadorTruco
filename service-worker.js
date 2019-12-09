@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/anotadorTruco/precache-manifest.9f0c2deba16b473a1fc3f8f50b63d2c7.js"
+  "/anotadorTruco/precache-manifest.1e519474799de2d59c43a33e48cb8b39.js"
 );
 
 self.addEventListener('message', (event) => {
