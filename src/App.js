@@ -7,11 +7,26 @@ import Jugadores from './components/Jugadores'
 
 function App() {
 
-  const[contadorNosotros, setContadorNosotros] = useState(localStorage.getItem('puntajeNosotros'));
-  const[contadorEllos, setContadorEllos] = useState(localStorage.getItem('puntajeEllos'));
+  const[contadorNosotros, setContadorNosotros] = useState(0);
+  const[contadorEllos, setContadorEllos] = useState(0);
 
   localStorage.setItem("puntajeNosotros", contadorNosotros);
   localStorage.setItem("puntajeEllos", contadorEllos);
+
+  useEffect(() => {
+    const persistenciaContadorNosotros = localStorage.getItem('puntajeNosotros');
+    const persistenciaContadorEllos = localStorage.getItem('puntajeEllos');
+
+    if(persistenciaContadorNosotros) {
+      setContadorNosotros(persistenciaContadorNosotros)
+    }
+
+    if(persistenciaContadorEllos) {
+      setContadorEllos(persistenciaContadorEllos)
+    }
+
+  }, [])
+
 
   const incrementarNosotros = () => {
         if(contadorNosotros < 30 && contadorNosotros >= 0){
